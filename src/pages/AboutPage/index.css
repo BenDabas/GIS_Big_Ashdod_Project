@@ -1,0 +1,36 @@
+.about-page-wrapper {
+  background-image: url('../../assets/images/big_image.jpg');
+  height: 100vh;
+  width: 100%;
+}
+
+.map-image {
+  height: 350px;
+  width: 600px;
+}
+
+.back-button {
+  margin: 10px 10px 10px 10px;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #052b5c;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.back-button:hover {
+  background-color: #295bb8;
+}
+
+.back-button:active {
+  background-color: #091f5e;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

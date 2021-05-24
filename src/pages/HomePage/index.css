@@ -1,0 +1,66 @@
+.home-page-wrapper {
+  height: 100vh;
+  width: 100%;
+  background-image: url('../../assets/images/big_image.jpg');
+  margin-top: -22px;
+}
+
+.home-page-button {
+  margin: 10px 10px 10px 10px;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.map-button {
+  background-image: url('../../assets/images/map.png');
+  background-color: #8a2d44;
+  background-position: left;
+  background-size: 33px;
+  background-repeat: no-repeat;
+  padding: 15px 45px;
+}
+
+.search-button {
+  background-image: url('../../assets/images/search.png');
+  background-position: left;
+  background-size: 33px;
+  background-repeat: no-repeat;
+  padding: 15px 45px;
+}
+
+.category-search-button {
+  background-image: url('../../assets/images/category-search.png');
+  background-position: left;
+  background-size: 33px;
+  background-repeat: no-repeat;
+  padding: 15px 45px;
+}
+
+.about-button {
+  background-image: url('../../assets/images/about.png');
+  background-position: left;
+  background-size: 33px;
+  background-repeat: no-repeat;
+  padding: 15px 45px;
+  background-color: #8a2d44;
+}
+
+.home-page-button:hover {
+  background-color: #3e8e41;
+}
+
+.home-page-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

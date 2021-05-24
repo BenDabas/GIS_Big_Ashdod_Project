@@ -1,0 +1,37 @@
+.search-by-Store-page-wrapper {
+  height: 100vh;
+  width: 100%;
+  background-image: url('../../assets/images/big_image.jpg');
+}
+
+.search-by-Store-label {
+  margin: 10px 10px;
+  font-size: 25px;
+  border: dashed;
+}
+
+.search-store-page-button {
+  margin: 10px 10px 10px 10px;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.search-store-page-button:hover {
+  background-color: #3e8e41;
+}
+
+.search-store-page-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
