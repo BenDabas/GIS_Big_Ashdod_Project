@@ -40,7 +40,7 @@ const SearchByStorePage = () => {
         Search Store
       </button>
       <div className="label-wrapper">
-        {storeDetail !== '' ? (
+        {storeDetail !== '' && storeDetail.length !== 0 ? (
           <a
             href={`https://qgis-2-web-big-ashdod.vercel.app/#21/${storeDetail[0].geometry.coordinates[0][0][0][1]}/${storeDetail[0].geometry.coordinates[0][0][0][0]}`}
           >

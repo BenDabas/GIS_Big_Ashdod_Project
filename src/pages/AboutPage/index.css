@@ -2,6 +2,8 @@
   background-image: url('../../assets/images/big_image.jpg');
   height: 100vh;
   width: 100%;
+  margin-top: -22px;
+  padding-top: 32px;
 }
 
 .map-image {
