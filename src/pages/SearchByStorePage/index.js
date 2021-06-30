@@ -37,6 +37,7 @@ const SearchByStorePage = () => {
   return (
     <div className="search-by-Store-page-wrapper">
       <DialogPopUp handleClose={handleCloseDialog} open={open} />
+      <h1> Search by store name</h1>
       <div className="search-by-store">
         <input value={storeSearch} onChange={handleStoreInput} />
       </div>
