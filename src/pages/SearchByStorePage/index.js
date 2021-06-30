@@ -3,6 +3,8 @@ import { useHistory } from 'react-router-dom';
 
 import { json_Big_Ashdod_1 } from '../../DB/index';
 
+import DialogPopUp from '../../Components/DialogPopUp';
+
 import './index.css';
 
 const SearchByStorePage = () => {
@@ -10,6 +12,11 @@ const SearchByStorePage = () => {
 
   const [storeSearch, setStoreSearch] = useState('');
   const [storeDetail, setStoreDetails] = useState('');
+  const [open, setOpen] = useState(true);
+
+  const handleCloseDialog = () => {
+    setOpen(false);
+  };
 
   const handleStoreInput = ({ target }) => {
     setStoreSearch(target.value);
@@ -29,6 +36,7 @@ const SearchByStorePage = () => {
 
   return (
     <div className="search-by-Store-page-wrapper">
+      <DialogPopUp handleClose={handleCloseDialog} open={open} />
       <div className="search-by-store">
         <input value={storeSearch} onChange={handleStoreInput} />
       </div>

@@ -5,13 +5,19 @@ import Chip from '@material-ui/core/Chip';
 
 import { json_Big_Ashdod_1 } from '../../DB/index';
 
+import DialogPopUp from '../../Components/DialogPopUp';
+
 import './index.css';
 
 const SearchByCategoryPage = () => {
   const history = useHistory();
 
   const [categorySearch, setCategorySearch] = useState([]);
+  const [open, setOpen] = useState(true);
 
+  const handleCloseDialog = () => {
+    setOpen(false);
+  };
   const categories = [
     'Fashion',
     'Footwear',
@@ -37,6 +43,7 @@ const SearchByCategoryPage = () => {
 
   return (
     <div className="search-by-category-page-wrapper">
+      <DialogPopUp handleClose={handleCloseDialog} open={open} />
       <button
         className="search-category-page-button"
         onClick={handleBackButton}

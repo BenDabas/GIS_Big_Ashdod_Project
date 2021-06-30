@@ -7,15 +7,18 @@ import './index.css';
 
 const HomePage = () => {
   const history = useHistory();
+  const [open, setOpen] = React.useState(false);
 
   const Tada = styled.div`
     animation: 1s ${keyframes`${tada}`} 1;
   `;
   const handleSearchByCategory = () => {
-    history.push('/search-by-category');
+    setOpen(true);
+    history.push({ pathname: '/search-by-category', open: true });
   };
 
   const handleSearchByStore = () => {
+    setOpen(true);
     history.push('/search-by-store');
   };
 
