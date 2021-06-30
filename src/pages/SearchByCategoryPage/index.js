@@ -56,11 +56,15 @@ const SearchByCategoryPage = () => {
       </div>
       {categorySearch.map((store, index) => {
         return (
-          <div>
+          <div className="chips-wrapper">
             <Chip
-              style={{ fontSize: '25px', margin: '8px 8px' }}
-              label={`Name: ${categorySearch[index].properties?.name}, category: ${categorySearch[index].properties?.category}
-            , location: ${categorySearch[index].properties?.location}, opening hours: ${categorySearch[index].properties?.time}`}
+              style={{
+                fontSize: '30px',
+                margin: '4px 8px',
+                width: '20%',
+                height: '20%',
+              }}
+              label={`${categorySearch[index].properties?.name}`}
               clickable
               color="primary"
               component="a"
